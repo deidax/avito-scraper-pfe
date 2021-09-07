@@ -1,5 +1,5 @@
 
-## Installation
+## Avito Scraper
 
 Usage demo
 
