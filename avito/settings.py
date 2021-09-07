@@ -96,6 +96,10 @@ MONGODB_PORT = 27017
 MONGODB_DB = "avito"
 MONGODB_COLLECTION = "products"
 
+# CLI LOGS
+# LOG_STDOUT = True
+# LOG_FILE = './scrapy_output.txt'
+
 
 
 

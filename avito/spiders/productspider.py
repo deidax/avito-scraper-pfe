@@ -18,7 +18,7 @@ class ProductSpider(CrawlSpider):
     name = "productspider"
 
     allowed_domains = ['www.avito.ma']
-    start_urls = ['https://www.avito.ma/fr/khouribga/camions-%C3%A0_vendre']
+    start_urls = []
 
     rules = [
         Rule(LinkExtractor(restrict_xpaths='//div[contains(@class, "euIWqN")]/div/a'), callback='parse', follow=True),
@@ -30,6 +30,8 @@ class ProductSpider(CrawlSpider):
     display_number_of_products = True
     
     def __init__(self, *args, **kwargs):
+        self.start_urls = []
+        self.start_urls.append(kwargs.get('url'))
         scrapyTitle = pyfiglet.figlet_format("AvitoScraper", font='speed')
         print(colored(scrapyTitle, 'yellow'))
         super(ProductSpider, self).__init__(*args, **kwargs)

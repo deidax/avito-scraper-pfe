@@ -1,0 +1,362 @@
+2021-09-07 02:55:37 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: avito)
+2021-09-07 02:55:37 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.10 (default, Jun  2 2021, 10:49:15) - [GCC 9.4.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 3.4.8, Platform Linux-5.11.0-27-generic-x86_64-with-glibc2.29
+2021-09-07 02:55:37 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-09-07 02:55:37 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'avito',
+ 'DOWNLOAD_DELAY': 3,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': './scrapy_output.txt',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'avito.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['avito.spiders']}
+2021-09-07 02:55:37 [scrapy.extensions.telnet] INFO: Telnet Password: dff7c05275e9ce8d
+2021-09-07 02:55:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-09-07 02:55:37 [stdout] INFO: [33m_______       __________      ________
+2021-09-07 02:55:37 [stdout] INFO: ___    |__   ____(_)_  /________  ___/__________________ _____________________
+2021-09-07 02:55:37 [stdout] INFO: __  /| |_ | / /_  /_  __/  __ \____ \_  ___/_  ___/  __ `/__  __ \  _ \_  ___/
+2021-09-07 02:55:37 [stdout] INFO: _  ___ |_ |/ /_  / / /_ / /_/ /___/ // /__ _  /   / /_/ /__  /_/ /  __/  /
+2021-09-07 02:55:37 [stdout] INFO: /_/  |_|____/ /_/  \__/ \____//____/ \___/ /_/    \__,_/ _  .___/\___//_/
+2021-09-07 02:55:37 [stdout] INFO:                                                          /_/
+2021-09-07 02:55:37 [stdout] INFO: [0m
+2021-09-07 02:55:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-09-07 02:55:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-09-07 02:55:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['avito.pipelines.MongoDBPipeline']
+2021-09-07 02:55:37 [scrapy.core.engine] INFO: Spider opened
+2021-09-07 02:55:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-09-07 02:55:37 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2021-09-07 02:55:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ma/robots.txt> (referer: None)
+2021-09-07 02:55:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ma/fr/ahfir/voitures-%C3%A0_vendre> (referer: None)
+2021-09-07 02:55:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ma/fr/ahfir/voitures/Clio_1_46984548.htm> (referer: https://www.avito.ma/fr/ahfir/voitures-%C3%A0_vendre)
+2021-09-07 02:55:44 [stdout] INFO: [35m****     SCRAPING PRODUCT     ****[0m
+2021-09-07 02:55:44 [stdout] INFO: 
+2021-09-07 02:55:44 [stdout] INFO: [33mLoading[0m |
+2021-09-07 02:55:44 [stdout] INFO: 
+2021-09-07 02:55:44 [stdout] INFO: [33mLoading[0m /
+2021-09-07 02:55:44 [stdout] INFO: 
+2021-09-07 02:55:44 [stdout] INFO: [33mLoading[0m -
+2021-09-07 02:55:44 [stdout] INFO: 
+2021-09-07 02:55:44 [stdout] INFO: [33mLoading[0m \
+2021-09-07 02:55:44 [stdout] INFO: 
+2021-09-07 02:55:44 [stdout] INFO: [32mDONE[0m
+2021-09-07 02:55:44 [stdout] INFO: [33m [MONGODB] OK!: {'n': 1, 'nModified': 0, 'upserted': ObjectId('6136c6a0818edeac0e5562c9'), 'ok': 1.0, 'updatedExisting': False}[0m
+2021-09-07 02:55:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.avito.ma/fr/ahfir/voitures/Clio_1_46984548.htm>
+{'product_data_items': {'address': None,
+                        'brand': 'Renault',
+                        'bv': 'Manuelle',
+                        'car_ac': '1',
+                        'car_rims': '1',
+                        'city': 'Ahfir',
+                        'description': 'Clio 1 jdiiida',
+                        'doors': '5',
+                        'first_owner': 'Non',
+                        'fuel': 'Essence',
+                        'has_shipping': False,
+                        'is_seller_phone_verified': True,
+                        'last_update_date': '2021-09-06 17:38:38',
+                        'mileage': '80 000 - 84 999',
+                        'model': 'Clio',
+                        'number_of_images': 4,
+                        'pfiscale': '7 CV',
+                        'price': None,
+                        'product_id': '61879607',
+                        'regdate': '1995',
+                        'seller_address': None,
+                        'seller_name': 'Issam Boumediene',
+                        'seller_phone': '0654671167',
+                        'seller_type': 'private',
+                        'subject': 'Clio 1',
+                        'type': 'Voitures, Vente',
+                        'url': 'https://www.avito.ma/fr/ahfir/voitures/Clio_1_46984548.htm',
+                        'v_origin': 'Dédouanée'}}
+2021-09-07 02:55:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ma/fr/ahfir/voitures/Renault_19_44938575.htm> (referer: https://www.avito.ma/fr/ahfir/voitures-%C3%A0_vendre)
+2021-09-07 02:55:48 [stdout] INFO: [35m****     SCRAPING PRODUCT     ****[0m
+2021-09-07 02:55:48 [stdout] INFO: 
+2021-09-07 02:55:48 [stdout] INFO: [33mLoading[0m |
+2021-09-07 02:55:48 [stdout] INFO: 
+2021-09-07 02:55:48 [stdout] INFO: [33mLoading[0m /
+2021-09-07 02:55:48 [stdout] INFO: 
+2021-09-07 02:55:48 [stdout] INFO: [33mLoading[0m -
+2021-09-07 02:55:48 [stdout] INFO: 
+2021-09-07 02:55:48 [stdout] INFO: [33mLoading[0m \
+2021-09-07 02:55:48 [stdout] INFO: 
+2021-09-07 02:55:48 [stdout] INFO: [32mDONE[0m
+2021-09-07 02:55:48 [stdout] INFO: [33m [MONGODB] OK!: {'n': 1, 'nModified': 0, 'upserted': ObjectId('6136c6a4818edeac0e5562cd'), 'ok': 1.0, 'updatedExisting': False}[0m
+2021-09-07 02:55:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.avito.ma/fr/ahfir/voitures/Renault_19_44938575.htm>
+{'product_data_items': {'address': None,
+                        'area': 'Toute la ville',
+                        'brand': 'Renault',
+                        'bv': 'Manuelle',
+                        'city': 'Ahfir',
+                        'description': 'Renault 19',
+                        'doors': '5',
+                        'first_owner': 'Oui',
+                        'fuel': 'Essence',
+                        'has_shipping': False,
+                        'is_seller_phone_verified': False,
+                        'last_update_date': '2021-03-19 20:47:12',
+                        'mileage': '350 000 - 399 999',
+                        'model': 'R19',
+                        'number_of_images': 3,
+                        'pfiscale': '8 CV',
+                        'price': None,
+                        'product_id': '58779056',
+                        'regdate': '1989',
+                        'seller_address': None,
+                        'seller_name': 'Bekkal abdennaceur',
+                        'seller_phone': '0615394953',
+                        'seller_type': 'private',
+                        'subject': 'Renault 19',
+                        'type': 'Voitures, Vente',
+                        'url': 'https://www.avito.ma/fr/ahfir/voitures/Renault_19_44938575.htm',
+                        'v_origin': 'Importée neuve'}}
+2021-09-07 02:55:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ma/fr/ahfir/voitures/Renault_19_44960041.htm> (referer: https://www.avito.ma/fr/ahfir/voitures-%C3%A0_vendre)
+2021-09-07 02:55:52 [stdout] INFO: [35m****     SCRAPING PRODUCT     ****[0m
+2021-09-07 02:55:52 [stdout] INFO: 
+2021-09-07 02:55:52 [stdout] INFO: [33mLoading[0m |
+2021-09-07 02:55:52 [stdout] INFO: 
+2021-09-07 02:55:52 [stdout] INFO: [33mLoading[0m /
+2021-09-07 02:55:52 [stdout] INFO: 
+2021-09-07 02:55:52 [stdout] INFO: [33mLoading[0m -
+2021-09-07 02:55:53 [stdout] INFO: 
+2021-09-07 02:55:53 [stdout] INFO: [33mLoading[0m \
+2021-09-07 02:55:53 [stdout] INFO: 
+2021-09-07 02:55:53 [stdout] INFO: [32mDONE[0m
+2021-09-07 02:55:53 [stdout] INFO: [33m [MONGODB] OK!: {'n': 1, 'nModified': 0, 'upserted': ObjectId('6136c6a9818edeac0e5562d0'), 'ok': 1.0, 'updatedExisting': False}[0m
+2021-09-07 02:55:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.avito.ma/fr/ahfir/voitures/Renault_19_44960041.htm>
+{'product_data_items': {'address': None,
+                        'brand': 'Renault',
+                        'bv': 'Manuelle',
+                        'car_ac': '1',
+                        'car_central_locking': '1',
+                        'city': 'Ahfir',
+                        'description': 'درب العرفة',
+                        'doors': '5',
+                        'first_owner': 'Non',
+                        'fuel': 'Essence',
+                        'has_shipping': False,
+                        'is_seller_phone_verified': True,
+                        'last_update_date': '2021-03-21 18:09:16',
+                        'mileage': '0 - 4 999',
+                        'model': 'R19',
+                        'number_of_images': 4,
+                        'pfiscale': '8 CV',
+                        'price': 35000,
+                        'product_id': '58818770',
+                        'regdate': '1992',
+                        'seller_address': None,
+                        'seller_name': 'Mohamed',
+                        'seller_phone': '0616995301',
+                        'seller_type': 'private',
+                        'subject': 'Renault 19',
+                        'type': 'Voitures, Vente',
+                        'url': 'https://www.avito.ma/fr/ahfir/voitures/Renault_19_44960041.htm',
+                        'v_origin': 'Importée neuve'}}
+2021-09-07 02:55:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ma/fr/ahfir/voitures/peugeot_45104200.htm> (referer: https://www.avito.ma/fr/ahfir/voitures-%C3%A0_vendre)
+2021-09-07 02:55:56 [stdout] INFO: [35m****     SCRAPING PRODUCT     ****[0m
+2021-09-07 02:55:56 [stdout] INFO: 
+2021-09-07 02:55:56 [stdout] INFO: [33mLoading[0m |
+2021-09-07 02:55:56 [stdout] INFO: 
+2021-09-07 02:55:56 [stdout] INFO: [33mLoading[0m /
+2021-09-07 02:55:56 [stdout] INFO: 
+2021-09-07 02:55:56 [stdout] INFO: [33mLoading[0m -
+2021-09-07 02:55:56 [stdout] INFO: 
+2021-09-07 02:55:56 [stdout] INFO: [33mLoading[0m \
+2021-09-07 02:55:56 [stdout] INFO: 
+2021-09-07 02:55:56 [stdout] INFO: [32mDONE[0m
+2021-09-07 02:55:56 [stdout] INFO: [33m [MONGODB] OK!: {'n': 1, 'nModified': 0, 'upserted': ObjectId('6136c6ac818edeac0e5562d3'), 'ok': 1.0, 'updatedExisting': False}[0m
+2021-09-07 02:55:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.avito.ma/fr/ahfir/voitures/peugeot_45104200.htm>
+{'product_data_items': {'address': None,
+                        'brand': 'Peugeot',
+                        'bv': 'Manuelle',
+                        'city': 'Ahfir',
+                        'description': 'لوطو نقية الثمن قبل للتفاوض ',
+                        'doors': '3',
+                        'first_owner': 'Non',
+                        'fuel': 'Diesel',
+                        'has_shipping': False,
+                        'is_seller_phone_verified': True,
+                        'last_update_date': '2021-04-02 20:15:08',
+                        'mileage': '100 000 - 109 999',
+                        'model': '504',
+                        'number_of_images': 6,
+                        'pfiscale': '8 CV',
+                        'price': 30000,
+                        'product_id': '59079812',
+                        'regdate': '1988',
+                        'seller_address': None,
+                        'seller_name': 'عبد القادر',
+                        'seller_phone': '0662724703',
+                        'seller_type': 'private',
+                        'subject': 'peugeot',
+                        'type': 'Voitures, Vente',
+                        'url': 'https://www.avito.ma/fr/ahfir/voitures/peugeot_45104200.htm',
+                        'v_origin': 'Dédouanée'}}
+2021-09-07 02:56:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ma/fr/ahfir/voitures/dacia__45170758.htm> (referer: https://www.avito.ma/fr/ahfir/voitures-%C3%A0_vendre)
+2021-09-07 02:56:01 [stdout] INFO: [35m****     SCRAPING PRODUCT     ****[0m
+2021-09-07 02:56:01 [stdout] INFO: 
+2021-09-07 02:56:01 [stdout] INFO: [33mLoading[0m |
+2021-09-07 02:56:01 [stdout] INFO: 
+2021-09-07 02:56:01 [stdout] INFO: [33mLoading[0m /
+2021-09-07 02:56:01 [stdout] INFO: 
+2021-09-07 02:56:01 [stdout] INFO: [33mLoading[0m -
+2021-09-07 02:56:01 [stdout] INFO: 
+2021-09-07 02:56:01 [stdout] INFO: [33mLoading[0m \
+2021-09-07 02:56:02 [stdout] INFO: 
+2021-09-07 02:56:02 [stdout] INFO: [32mDONE[0m
+2021-09-07 02:56:02 [stdout] INFO: [33m [MONGODB] OK!: {'n': 1, 'nModified': 0, 'upserted': ObjectId('6136c6b2818edeac0e5562d7'), 'ok': 1.0, 'updatedExisting': False}[0m
+2021-09-07 02:56:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.avito.ma/fr/ahfir/voitures/dacia__45170758.htm>
+{'product_data_items': {'address': None,
+                        'brand': 'Dacia',
+                        'bv': 'Manuelle',
+                        'car_ac': '1',
+                        'car_airbags': '1',
+                        'car_central_locking': '1',
+                        'car_cruise_control': '1',
+                        'car_electric_windows': '1',
+                        'car_esp': '1',
+                        'car_onboard_computer': '1',
+                        'car_speed_limiter': '1',
+                        'cd_mp3_bt': '1',
+                        'city': 'Ahfir',
+                        'description': 'je ma dacia en très bonne état '
+                                       'général ',
+                        'doors': '5',
+                        'first_owner': 'Oui',
+                        'fuel': 'Essence',
+                        'has_shipping': False,
+                        'is_seller_phone_verified': True,
+                        'last_update_date': '2021-04-08 16:16:14',
+                        'mileage': '100 000 - 109 999',
+                        'model': 'Logan',
+                        'number_of_images': 5,
+                        'pfiscale': '6 CV',
+                        'price': 75000,
+                        'product_id': '59222699',
+                        'regdate': '2017',
+                        'seller_address': None,
+                        'seller_name': 'Abderrahim',
+                        'seller_phone': '0615566666',
+                        'seller_type': 'private',
+                        'subject': 'dacia ',
+                        'type': 'Voitures, Vente',
+                        'url': 'https://www.avito.ma/fr/ahfir/voitures/dacia__45170758.htm',
+                        'v_origin': 'WW au Maroc'}}
+2021-09-07 02:56:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ma/fr/ahfir/voitures/Fiat__45301856.htm> (referer: https://www.avito.ma/fr/ahfir/voitures-%C3%A0_vendre)
+2021-09-07 02:56:04 [stdout] INFO: [35m****     SCRAPING PRODUCT     ****[0m
+2021-09-07 02:56:04 [stdout] INFO: 
+2021-09-07 02:56:04 [stdout] INFO: [33mLoading[0m |
+2021-09-07 02:56:04 [stdout] INFO: 
+2021-09-07 02:56:04 [stdout] INFO: [33mLoading[0m /
+2021-09-07 02:56:05 [stdout] INFO: 
+2021-09-07 02:56:05 [stdout] INFO: [33mLoading[0m -
+2021-09-07 02:56:05 [stdout] INFO: 
+2021-09-07 02:56:05 [stdout] INFO: [33mLoading[0m \
+2021-09-07 02:56:05 [stdout] INFO: 
+2021-09-07 02:56:05 [stdout] INFO: [32mDONE[0m
+2021-09-07 02:56:05 [stdout] INFO: [33m [MONGODB] OK!: {'n': 1, 'nModified': 0, 'upserted': ObjectId('6136c6b5818edeac0e5562d9'), 'ok': 1.0, 'updatedExisting': False}[0m
+2021-09-07 02:56:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.avito.ma/fr/ahfir/voitures/Fiat__45301856.htm>
+{'product_data_items': {'address': None,
+                        'brand': 'Fiat',
+                        'bv': 'Manuelle',
+                        'car_abs': '1',
+                        'car_ac': '1',
+                        'car_airbags': '1',
+                        'car_central_locking': '1',
+                        'car_cruise_control': '1',
+                        'car_electric_windows': '1',
+                        'car_esp': '1',
+                        'car_navigation': '1',
+                        'car_onboard_computer': '1',
+                        'car_reverse_radar': '1',
+                        'car_rims': '1',
+                        'car_speed_limiter': '1',
+                        'cd_mp3_bt': '1',
+                        'city': 'Ahfir',
+                        'description': 'voiture bon etat',
+                        'doors': '5',
+                        'first_owner': 'Non',
+                        'fuel': 'Diesel',
+                        'has_shipping': False,
+                        'is_seller_phone_verified': False,
+                        'last_update_date': '2021-04-21 20:46:02',
+                        'mileage': '20 000 - 24 999',
+                        'model': 'CROMA',
+                        'number_of_images': 0,
+                        'pfiscale': '8 CV',
+                        'price': None,
+                        'product_id': '59467405',
+                        'regdate': '2006',
+                        'seller_address': None,
+                        'seller_name': 'Abdelilah',
+                        'seller_phone': '0678357034',
+                        'seller_type': 'private',
+                        'subject': 'Fiat ',
+                        'type': 'Voitures, Vente',
+                        'url': 'https://www.avito.ma/fr/ahfir/voitures/Fiat__45301856.htm',
+                        'v_origin': 'Dédouanée'}}
+2021-09-07 02:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ma/fr/ahfir/voitures/Fiat_croma_45302067.htm> (referer: https://www.avito.ma/fr/ahfir/voitures-%C3%A0_vendre)
+2021-09-07 02:56:08 [stdout] INFO: [35m****     SCRAPING PRODUCT     ****[0m
+2021-09-07 02:56:08 [stdout] INFO: 
+2021-09-07 02:56:08 [stdout] INFO: [33mLoading[0m |
+2021-09-07 02:56:08 [stdout] INFO: 
+2021-09-07 02:56:08 [stdout] INFO: [33mLoading[0m /
+2021-09-07 02:56:08 [stdout] INFO: 
+2021-09-07 02:56:08 [stdout] INFO: [33mLoading[0m -
+2021-09-07 02:56:08 [stdout] INFO: 
+2021-09-07 02:56:08 [stdout] INFO: [33mLoading[0m \
+2021-09-07 02:56:08 [stdout] INFO: 
+2021-09-07 02:56:08 [stdout] INFO: [32mDONE[0m
+2021-09-07 02:56:08 [stdout] INFO: [33m [MONGODB] OK!: {'n': 1, 'nModified': 0, 'upserted': ObjectId('6136c6b8818edeac0e5562dd'), 'ok': 1.0, 'updatedExisting': False}[0m
+2021-09-07 02:56:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.avito.ma/fr/ahfir/voitures/Fiat_croma_45302067.htm>
+{'product_data_items': {'address': None,
+                        'brand': 'Fiat',
+                        'bv': 'Manuelle',
+                        'city': 'Ahfir',
+                        'description': '2eme mains.',
+                        'doors': None,
+                        'first_owner': None,
+                        'fuel': 'Diesel',
+                        'has_shipping': False,
+                        'is_seller_phone_verified': False,
+                        'last_update_date': '2021-04-21 21:09:20',
+                        'mileage': '20 000 - 24 999',
+                        'model': 'CROMA',
+                        'number_of_images': 3,
+                        'pfiscale': '8 CV',
+                        'price': None,
+                        'product_id': '59467480',
+                        'regdate': '2006',
+                        'seller_address': None,
+                        'seller_name': 'Abdelilah',
+                        'seller_phone': '0678357034',
+                        'seller_type': 'private',
+                        'subject': 'Fiat croma',
+                        'type': 'Voitures, Vente',
+                        'url': 'https://www.avito.ma/fr/ahfir/voitures/Fiat_croma_45302067.htm',
+                        'v_origin': None}}
+2021-09-07 02:56:09 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2021-09-07 02:56:09 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2021-09-07 02:56:09 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
